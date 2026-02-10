@@ -1,3 +1,6 @@
+/* ------------------------------
+   Variabili colore (light/dark)
+--------------------------------*/
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -10,6 +13,9 @@
   }
 }
 
+/* ------------------------------
+   Reset e base
+--------------------------------*/
 html,
 body {
   max-width: 100vw;
@@ -38,5 +44,61 @@ a {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+/* ------------------------------
+   Layout desktop
+--------------------------------*/
+.container {
+  padding: 4rem;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.block {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* ------------------------------
+   Layout mobile
+--------------------------------*/
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1.4rem;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+
+  .block {
+    margin-bottom: 2.5rem;
   }
 }
