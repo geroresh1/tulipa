@@ -69,7 +69,7 @@ export default function RootLayout({ children }) {
       letterSpacing: "0.03em",
       color: "#111"
     }}>
-      Tulapa
+      Tulipa
     </span>
   </div>
 
